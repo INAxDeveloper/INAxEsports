@@ -34,7 +34,7 @@ Tournament App is a mobile application that allows users to participate in, orga
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/tournament-app.git
+    git clone [https://github.com/yourusername/tournament-app.git](https://github.com/INAxDeveloper/INAxEsports.git)
     cd tournament-app
     ```
 
