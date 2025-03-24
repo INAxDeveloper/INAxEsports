@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.inaxdevelopers.esports.ui.homeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/tournamentDetailsFragment"
+        android:name="com.inaxdevelopers.esports.ui.TournamentDetailsFragment"
+        android:label="Tournament Details" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.inaxdevelopers.esports.ui.ProfileFragment"
+        android:label="Profile">
+
+        <action
+            android:id="@+id/action_profile_to_add_Team"
+            app:destination="@+id/AddTeamFragment" />
+
+        <action
+            android:id="@+id/action_profile_to_Add_CommentaryMenFragment"
+            app:destination="@+id/Add_CommentaryMenFragment" />
+
+    </fragment>
+
+    <fragment android:id="@+id/AddTeamFragment"
+        android:name="com.inaxdevelopers.esports.ui.Add_teamFragment"/>
+    <fragment android:id="@+id/Add_CommentaryMenFragment"
+        android:name="com.inaxdevelopers.esports.ui.Add_CommentaryMenFragment"/>
+
+</navigation>
